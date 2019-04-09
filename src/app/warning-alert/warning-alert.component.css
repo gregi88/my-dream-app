@@ -1,0 +1,6 @@
+.warning {
+    padding: 20px;
+    text-align: center;
+    border: solid 3px red;
+    color: red;
+}
