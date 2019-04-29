@@ -2,5 +2,8 @@
     padding: 20px;
     text-align: center;
     border: solid 3px red;
+    border-radius: 5px;
     color: red;
+    background-color: hotpink;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
 }

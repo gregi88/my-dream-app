@@ -1,5 +1,108 @@
 <p>
   servers works!
 </p>
+
+
+<label>Server Name</label>
+<br>
+
+
+<input 
+type="text" 
+class="form-control"
+(input)="onUpdateServerName($event)">
+
+<br>
+
+<button 
+(click)="onCreateServer()"
+[disabled]="!allowNewServer"  
+class="btn btn-primary">
+Add server
+</button>
+<br>
+
+<!--<p> {{ serverName }}</p>-->
+<!--<p [innerText]="allowNewServer"></p>-->
+
+<!--<p>{{ serverCreationStatus }}</p>-->
+<br>
+<!-- serverCreated is set to false and it turns to true after click -->
+<p *ngIf="serverCreated; else noServer ">Server was created, with name: {{ serverName }}</p>
+<ng-template #noServer>
+  <p>
+    No server was created !
+  </p>
+</ng-template>
+
+
+
+
+<hr>
+
+
+
+<!-- Two way data bindi
+  ng -->
+
+<label>Input name</label>
+<br>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]= "user"
+>
+<p>{{ user + removeMessage }}</p>
+
+
+<button
+class="btn btn-danger"
+[disabled]="user ===''"
+(click)="onReset()" 
+>RESET</button>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- RESET FORM WITH BUTTON
+
+<input type="text" 
+class="form-control"
+[(ngModel)] = 'username'
+>
+
+<p>{{ username }}</p>
+
+<button
+class="btn btn-success"
+[disabled] = "username === ''"
+(click) = "username = ''"
+>
+RESET
+</button>
+
+<br>
+-->
+
 <app-server></app-server>
-<app-server></app-server>
+

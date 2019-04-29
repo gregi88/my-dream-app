@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   // or inline style
   styles: [`
     h3{
+      font-size: 50px;
       color: orange;
     }
   `]

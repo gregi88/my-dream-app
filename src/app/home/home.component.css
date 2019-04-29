@@ -1,0 +1,12 @@
+.home {
+    text-transform: capitalize;
+    letter-spacing: 20px;
+    font-size: 100px;
+    background: red;
+    text-align: center;
+    border: solid black 10px;
+    border-radius: 50px;
+}
+.special {
+	background-color: aquamarine;
+}
